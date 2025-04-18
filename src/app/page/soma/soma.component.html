@@ -1,9 +1,39 @@
-
+//soma
 <form>
     Número 1: <input #numero1 type="text" /><br/>
     Número 2: <input #numero2 type="text" /><br/>
     <input type="button" value="Somar"
         (click)="somarBotao(numero1.value, numero2.value)" />
+    <br/><br/>
+    Resultado: <input type="text" [value]="resultado" readonly />
+</form>
+
+//subtração
+<form>
+    Número 1: <input #numero1 type="text" /><br/>
+    Número 2: <input #numero2 type="text" /><br/>
+    <input type="button" value="Subtrair"
+        (click)="subtrairBotao(numero1.value, numero2.value)" />
+    <br/><br/>
+    Resultado: <input type="text" [value]="resultado" readonly />
+</form>
+
+//multiplicação
+<form>
+    Número 1: <input #numero1 type="text" /><br/>
+    Número 2: <input #numero2 type="text" /><br/>
+    <input type="button" value="Multiplicar"
+        (click)="multiplicarBotao(numero1.value, numero2.value)" />
+    <br/><br/>
+    Resultado: <input type="text" [value]="resultado" readonly />
+</form>
+
+//divisão
+<form>
+    Número 1: <input #numero1 type="text" /><br/>
+    Número 2: <input #numero2 type="text" /><br/>
+    <input type="button" value="Dividir"
+        (click)="dividirBotao(numero1.value, numero2.value)" />
     <br/><br/>
     Resultado: <input type="text" [value]="resultado" readonly />
 </form>
